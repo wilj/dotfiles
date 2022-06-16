@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - earshinov.permute-lines
+    - timonwong.shellcheck
+    - esbenp.prettier-vscode
+    - asvetliakov.vscode-neovim
