@@ -17,6 +17,9 @@ nmap <silent> <c-l> :wincmd l<CR>
 nnoremap <Leader>w <C-w>
 nnoremap f<Space> :update<CR>
 
+" replace quoted timestamp with current ISO-8601 timestamp
+nnoremap fit ci"<C-R>=strftime("%FT%T%z")<CR><Esc>
+
 nnoremap <Leader>s diw"0P
 
 nnoremap <silent> <Leader>f :Rg<CR>
