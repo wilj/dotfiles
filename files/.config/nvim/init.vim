@@ -8,6 +8,8 @@ set smartcase
 filetype plugin indent on
 syntax on
 
+imap jj <Esc>
+
 " Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
