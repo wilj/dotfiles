@@ -10,7 +10,7 @@ RUN export DEBIAN_FRONTEND='noninteractive' \
         gettext \
         sshfs \
         tldr \
-    && wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb \
+    && wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb \
     && sudo dpkg -i nvim-linux64.deb \
     && rm nvim-linux64.deb \
     && rm -rf /var/lib/apt/lists/*
