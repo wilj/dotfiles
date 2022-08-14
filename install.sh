@@ -13,7 +13,7 @@ cat files/.tmux.conf > ~/.tmux.conf
 
 mkdir -p ~/.config/nvim/
 cp files/.config/nvim/init.vim ~/.config/nvim/
-if [ -n "$GITPOD_REPO_ROOT" ]; then
+if [ -z "$GITPOD_REPO_ROOT" ]; then
     cp files/.config/nvim/full.vim ~/.config/nvim/
     cp files/.config/nvim/coc-settings.json ~/.config/nvim/
 fi
