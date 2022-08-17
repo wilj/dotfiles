@@ -80,3 +80,12 @@ dive() {
         -v /var/run/docker.sock:/var/run/docker.sock \
         wagoodman/dive:latest $*
 }
+
+
+diff-docker-containers() {
+    for c in $(docker ps -q | sort); do 
+        echo $c; echo '---------------------'
+        docker diff $c | sort -k2
+        echo
+    done
+}
